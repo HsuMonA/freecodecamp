@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,11 +33,11 @@
       });
     </script>
   </head>
-  <body>
+  <body class="has-navbar-fixed-top">
     <header id="header">
       <nav
         id="nav-bar"
-        class="navbar"
+        class="navbar is-fixed-top"
         role="navigation"
         aria-label="main navigation"
       >
@@ -65,11 +65,11 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item nav-link">Features</a>
+            <a class="navbar-item nav-link" href="#introduction">Introduction</a>
 
-            <a class="navbar-item nav-link">Product</a>
+            <a class="navbar-item nav-link" href="#features">Features</a>
 
-            <a class="navbar-item nav-link">Pricing</a>
+            <a class="navbar-item nav-link" href="#pricing">Pricing</a>
 
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">More</a>
@@ -96,12 +96,13 @@
         </div>
       </nav>
     </header>
-    <section class="clip">
+
+    <section id="introduction">
       <div class="container">
         <div class="columns">
           <div class="column is-flex">
-            <div class="box intro">
-              <strong>Lorem Ipsum</strong>
+            <div class="box">
+              <h1>Lorem Ipsum</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
                 quis quam dui. Nullam lectus augue, dapibus vel quam eget,
@@ -120,7 +121,7 @@
       </div>
     </section>
 
-    <section class="features">
+    <section id="features" class="features">
       <div class="container">
         <div class="columns is-vcentered">
           <div class="column">
@@ -175,7 +176,7 @@
         </div>
       </div>
     </section>
-    <section class="pricing">
+    <section id="pricing" class="pricing">
       <div class="container">
         <div class="columns">
           <div class="column">
@@ -317,7 +318,7 @@
           </div>
           <div class="column">
             <div class="block">
-              <h1 class="is-size-6">SUBSCRIBE</h1>
+              <h1 class="is-size-6 is-uppercase">Subscribe</h1>
               <p class="is-size-6 mt-2">
                 Sign up if you want to stay up to date and recieve
                 notifications.
@@ -330,6 +331,7 @@
                     class="input is-primary"
                     id="email"
                     type="email"
+                    name="email"
                     placeholder="Enter your email"
                   />
                 </p>
