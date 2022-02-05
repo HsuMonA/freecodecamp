@@ -41,3 +41,18 @@ body {
   height: 100%;
   flex-direction: column;
 }
+
+@media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 3.5rem;
+  }
+  nav {
+    height: 3.5rem;
+  }
+  body.has-navbar-fixed-top {
+    padding-top: 3.5rem;
+  }
+  #header-img {
+    min-height: 2.5rem;
+  }
+}
