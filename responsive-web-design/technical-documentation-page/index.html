@@ -56,8 +56,12 @@
                 example, this CSS selects paragraph text, setting the color to
                 red:
               </p>
-              <pre>
-              <code>p { color: red; }</code></pre>
+              <pre><code
+>p {
+  color: red;
+}
+</code></pre>
+
               <p>
                 Let's try it out! Using a text editor, paste the three lines of
                 CSS (above) into a new file. Save the file as style.css in a
@@ -149,13 +153,14 @@
                 To modify multiple property values in one ruleset, write them
                 separated by semicolons, like this:
               </p>
-              <pre>
-              <code>
-                p { color: red; 
-                    width: 500px; 
-                    border: 1px solid black; }
-              </code>
-              </pre>
+
+              <pre><code
+>p {
+  color: red; 
+  width: 500px; 
+  border: 1px solid black; 
+}
+</code></pre>
             </section>
 
             <section class="main-section" id="selecting_multiple_elements">
@@ -167,8 +172,12 @@
                 to all of them. Separate multiple selectors by commas. For
                 example:
               </p>
-              <pre>
-              <code>p, li, h1 { color: red; }</code></pre>
+              <pre><code
+>p, li, h1 {
+  color: red; 
+}
+</code></pre>
+
               <p>There are many different types of selectors as well.</p>
             </section>
 
@@ -214,14 +223,12 @@
                     all elements inside it inherit the same font-size and
                     font-family.
                   </p>
-                  <pre>
-                  <code>
-                    html{ font-size: 10px; /* px means "pixels": the base font
-                    size is now 10 pixels high */ font-family: "Open Sans",
-                    sans-serif; /* this should be the rest of the output you got
-                    from Google fonts */ }
-                  </code>
-                  </pre>
+                  <pre><code
+>html {
+  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+}
+</code></pre>
                 </li>
                 <li>
                   <p>
@@ -232,12 +239,18 @@
                     height and letter spacing to make body content more
                     readable.
                   </p>
-                  <pre>
-                  <code>
-                    h1 { font-size: 60px; text-align: center; } p, li {
-                    font-size: 16px;s line-height: 2; letter-spacing: 1px; }
-                  </code>
-                  </pre>
+                  <pre><code
+>h1 {
+  font-size: 60px;
+  text-align: center;
+}
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+</code></pre>
+
                   <p>
                     Adjust the px values as you like.Your work-in-progress
                     should look similar to this:
@@ -311,17 +324,28 @@
               <header id="changing-the-page-color">
                 <h3>Changing the page color</h3>
               </header>
-              <pre>
-              <code>html { background-color: #00539F; }</code></pre>
+              <pre><code
+>html { 
+  background-color: #00539F;
+}
+</code></pre>
+
               <p>
                 This rule sets a background color for the entire page. Change
                 the color code to the color you chose in What will my website
                 look like?.
               </p>
               <header id="styling-the-body"><h3>Stying the body</h3></header>
-              <pre>
-              <code>body { width: 600px; margin: 0 auto; background-color: #FF9500;
-                padding: 0 20px 20px 20px; border: 5px solid black; }</code></pre>
+              <pre><code
+>body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px; 
+  border: 5px solid black;
+}
+</code></pre>
+
               <p>
                 There are several declarations for the &lt;body&gt; element.
                 Let's go through these line-by-line:
@@ -367,15 +391,14 @@
               <header id="positioning_and_styling_the_main_page_title">
                 <h3>Positioning and styling the main page title</h3>
               </header>
-
-              <pre>
-              <code> h1{margin: 0;
-                     padding: 20px 0;
-                      color: #00539F;
-                      text-shadow: 3px 3px 1px black;
-                      }
-</code>
-</pre>
+              <pre><code
+>h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
+}
+</code></pre>
 
               <p>
                 You may have noticed there's a horrible gap at the top of the
@@ -421,13 +444,13 @@
               <header id="centering_the_image">
                 <h3>Centering the image</h3>
               </header>
-              <pre>
-              <code>img {
+
+              <pre><code
+>img {
   display: block;
   margin: 0 auto;
 }
-</code>
-</pre>
+</code></pre>
               <p>
                 Next, we center the image to make it look better. We could use
                 the margin: 0 auto trick again as we did for the body. But there
