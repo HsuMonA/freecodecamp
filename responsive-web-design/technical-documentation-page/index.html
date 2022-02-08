@@ -11,28 +11,31 @@
   <body>
     <div class="ui container">
       <div class="ui grid">
-        <div class="six wide column">
-          <nav class="ui vertical menu" id="navbar">
-            <header id="css_basics">CSS basics</header>
-             <a href="#introduction" class="item nav-link">Introduction</a>
-             <a href="#what_is_css" class="item nav-link">What is CSS?</a>
-             <a href="#anatomy_of_a_css_ruleset" class="item nav-link">Anatomy of a css ruleset</a>
-             <a href="#selecting_multiple_elements" class="item nav-link">Selecting multiple elements</a>
-             <a href="#fonts_and_text" class="item nav-link">Fonts and text</a>
-             <a href="#css_all_about_boxes" class="item nav-link">CSS all about boxes</a>
-             <a href="#conclusion" class="item nav-link">Conclusion</a>
-          
-             <a href="#reference" class="item nav-link">Reference</a>
-             
+        <div class="four wide column">
+          <nav class="ui left fixed vertical large menu" id="navbar">
+            <div class="ui large header item" id="css_basics">CSS basics</div>
+            <a href="#introduction" class="item nav-link">Introduction</a>
+            <a href="#what_is_css" class="item nav-link">What is CSS?</a>
+            <a href="#anatomy_of_a_css_ruleset" class="item nav-link">
+              Anatomy of a css ruleset
+            </a>
+            <a href="#selecting_multiple_elements" class="item nav-link">
+              Selecting multiple elements
+            </a>
+            <a href="#fonts_and_text" class="item nav-link">Fonts and text</a>
+            <a href="#css_all_about_boxes" class="item nav-link">
+              CSS all about boxes
+            </a>
+            <a href="#conclusion" class="item nav-link">Conclusion</a>
 
-            
+            <a href="#reference" class="item nav-link">Reference</a>
           </nav>
         </div>
 
-        <div class="ten wide column">
+        <div class="twelve wide column">
           <main id="main-doc">
-            <section class="main-section" id="introduction" >
-              <header id="introduction">Introduction</header>
+            <section class="main-section" id="introduction">
+              <header id="introduction"><h1>Introduction</h1></header>
               <p>
                 CSS (Cascading Style Sheets) is the code that styles web
                 content. CSS basics walks through what you need to get started.
@@ -42,8 +45,9 @@
                 colors?
               </p>
             </section>
+
             <section class="main-section" id="what_is_css?">
-              <header id="what_is_css?">What is CSS?</header>
+              <header id="what_is_css?"><h2>What is CSS?</h2></header>
               <p>
                 Like HTML, CSS is not a programming language. It's not a markup
                 language either.
@@ -52,7 +56,8 @@
                 example, this CSS selects paragraph text, setting the color to
                 red:
               </p>
-              <code>p { color: red; }</code>
+              <pre>
+              <code>p { color: red; }</code></pre>
               <p>
                 Let's try it out! Using a text editor, paste the three lines of
                 CSS (above) into a new file. Save the file as style.css in a
@@ -79,6 +84,7 @@
                   </p>
                   <img
                     src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/website-screenshot-styled.png"
+                    alt=""
                   />
                   <p>
                     If your paragraph text is red, congratulations! Your CSS is
@@ -87,9 +93,10 @@
                 </li>
               </ol>
             </section>
+
             <section class="main-section" id="anatomy_of_a_css_ruleset">
               <header id="anatomy_of_a_css_ruleset">
-                Anatomy of a CSS ruleset
+                <h2>Anatomy of a CSS ruleset</h2>
               </header>
               <p>
                 The whole structure is called a ruleset. (The term ruleset is
@@ -142,24 +149,31 @@
                 To modify multiple property values in one ruleset, write them
                 separated by semicolons, like this:
               </p>
+              <pre>
               <code>
-                p { color: red; width: 500px; border: 1px solid black; }
+                p { color: red; 
+                    width: 500px; 
+                    border: 1px solid black; }
               </code>
+              </pre>
             </section>
+
             <section class="main-section" id="selecting_multiple_elements">
               <header id="selecting_multiple_elements">
-                Selecting multiple elements
+                <h2>Selecting multiple elements</h2>
               </header>
               <p>
                 You can also select multiple elements and apply a single ruleset
                 to all of them. Separate multiple selectors by commas. For
                 example:
               </p>
-              <code>p, li, h1 { color: red; }</code>
+              <pre>
+              <code>p, li, h1 { color: red; }</code></pre>
               <p>There are many different types of selectors as well.</p>
             </section>
+
             <section class="main-section" id="fonts_and_text">
-              <header id="fonts_and_text">Fonts and text</header>
+              <header id="fonts_and_text"><h2>Fonts and text</h2></header>
               <p>
                 Now that we've explored some CSS fundamentals, let's improve the
                 appearance of the example by adding more rules and information
@@ -170,16 +184,13 @@
                   <p>
                     First, find the output from Google Fonts that you previously
                     saved from What will your website look like?. Add the
-                    <link />
-                    element somewhere inside your index.html's head (anywhere
-                    between the &lt;head&gt; and &lt;head&gt; tags). It looks
-                    something like this:
+                    &lt;link&gt; element somewhere inside your index.html's head
+                    (anywhere between the &lt;head&gt; and &lt;head&gt; tags).
+                    It looks something like this:
                   </p>
-                  <code>
-                    &lt;link
-                    href="https://fonts.googleapis.com/css?family=Open+Sans"
-                    rel="stylesheet" &gt;
-                  </code>
+                  &lt;link
+                  href="https://fonts.googleapis.com/css?family=Open+Sans"
+                  rel="stylesheet" &gt;
                   <p>
                     This code links your page to a style sheet that loads the
                     Open Sans font family with your webpage.
@@ -203,12 +214,14 @@
                     all elements inside it inherit the same font-size and
                     font-family.
                   </p>
+                  <pre>
                   <code>
                     html{ font-size: 10px; /* px means "pixels": the base font
                     size is now 10 pixels high */ font-family: "Open Sans",
                     sans-serif; /* this should be the rest of the output you got
                     from Google fonts */ }
                   </code>
+                  </pre>
                 </li>
                 <li>
                   <p>
@@ -219,22 +232,30 @@
                     height and letter spacing to make body content more
                     readable.
                   </p>
+                  <pre>
                   <code>
                     h1 { font-size: 60px; text-align: center; } p, li {
                     font-size: 16px;s line-height: 2; letter-spacing: 1px; }
                   </code>
+                  </pre>
                   <p>
                     Adjust the px values as you like.Your work-in-progress
                     should look similar to this:
+
+                    <img
+                      class="ui centered big image"
+                      src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/website-screenshot-font-small.png"
+                      alt=""
+                    />
                   </p>
-                  <img
-                    src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/website-screenshot-font-small.png"
-                  />
                 </li>
               </ol>
             </section>
+
             <section class="main-section" id="css:_all_about_boxes">
-              <header id="css:_all_about_boxes">CSS: all about boxes</header>
+              <header id="css:_all_about_boxes">
+                <h2>CSS: all about boxes</h2>
+              </header>
               <p>
                 Something you'll notice about writing CSS: a lot of it is about
                 boxes. This includes setting size, color, and position. Most
@@ -257,6 +278,7 @@
               </ul>
               <img
                 src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/box-model.png"
+                alt=""
               />
               <p>In this section we also use:</p>
               <ul>
@@ -284,86 +306,166 @@
                 what happens.
               </p>
             </section>
+
             <section>
               <header id="changing-the-page-color">
-                Changing the page color
+                <h3>Changing the page color</h3>
               </header>
-              <code>html { background-color: #00539F; }</code>
+              <pre>
+              <code>html { background-color: #00539F; }</code></pre>
               <p>
                 This rule sets a background color for the entire page. Change
                 the color code to the color you chose in What will my website
                 look like?.
               </p>
-              <header id="styling-the-body">Stying the body</header>
+              <header id="styling-the-body"><h3>Stying the body</h3></header>
+              <pre>
               <code>body { width: 600px; margin: 0 auto; background-color: #FF9500;
-                padding: 0 20px 20px 20px; border: 5px solid black; }</code>
+                padding: 0 20px 20px 20px; border: 5px solid black; }</code></pre>
               <p>
-               There are several declarations for the <body> element. Let's go through these line-by-line: 
+                There are several declarations for the &lt;body&gt; element.
+                Let's go through these line-by-line:
               </p>
               <ul>
-                <li>width: 600px; This forces the body to always be 600 pixels wide.</li>
-                <li>margin: 0 auto; When you set two values on a property like margin or padding, the first value affects the element's top and bottom side (setting it to 0 in this case); the second value affects the left and right side. (Here, auto is a special value that divides the available horizontal space evenly between left and right). You can also use one, two, three, or four values, as documented in Margin Syntax.</li>
-                <li>background-color: #FF9500; This sets the element's background color. This project uses a reddish orange for the body background color, as opposed to dark blue for the &lt;html&gt; element. (Feel free to experiment.)</li>
-                <li>padding: 0 20px 20px 20px; This sets four values for padding. The goal is to put some space around the content. In this example, there is no padding on the top of the body, and 20 pixels on the right, bottom and left. The values set top, right, bottom, left, in that order. As with margin, you can use one, two, three, or four values, as documented in Padding Syntax.</li>
-                <li>border: 5px solid black; This sets values for the width,
-                style and color of the border. In this case, it's a five-pixel-
-                wide, solid black border, on all sides of the body.</li>
+                <li>
+                  width: 600px; This forces the body to always be 600 pixels
+                  wide.
+                </li>
+                <li>
+                  margin: 0 auto; When you set two values on a property like
+                  margin or padding, the first value affects the element's top
+                  and bottom side (setting it to 0 in this case); the second
+                  value affects the left and right side. (Here, auto is a
+                  special value that divides the available horizontal space
+                  evenly between left and right). You can also use one, two,
+                  three, or four values, as documented in Margin Syntax.
+                </li>
+                <li>
+                  background-color: #FF9500; This sets the element's background
+                  color. This project uses a reddish orange for the body
+                  background color, as opposed to dark blue for the &lt;html&gt;
+                  element. (Feel free to experiment.)
+                </li>
+                <li>
+                  padding: 0 20px 20px 20px; This sets four values for padding.
+                  The goal is to put some space around the content. In this
+                  example, there is no padding on the top of the body, and 20
+                  pixels on the right, bottom and left. The values set top,
+                  right, bottom, left, in that order. As with margin, you can
+                  use one, two, three, or four values, as documented in Padding
+                  Syntax.
+                </li>
+                <li>
+                  border: 5px solid black; This sets values for the width, style
+                  and color of the border. In this case, it's a five-pixel-
+                  wide, solid black border, on all sides of the body.
+                </li>
               </ul>
             </section>
+
             <section>
-              <header id="positioning-and-styling-the-main-page-title">Positioning and
-              styling the main page title
-        </header>
-        <code>h1 {
-  margin: 0;
-  padding: 20px 0;
-  color: #00539F;
-  text-shadow: 3px 3px 1px black;
-}
+              <header id="positioning_and_styling_the_main_page_title">
+                <h3>Positioning and styling the main page title</h3>
+              </header>
+
+              <pre>
+              <code> h1{margin: 0;
+                     padding: 20px 0;
+                      color: #00539F;
+                      text-shadow: 3px 3px 1px black;
+                      }
 </code>
-        <p>You may have noticed there's a horrible gap at the top of the body.
-        That happens because browsers apply default styling to the &lt;h1&gt;
-        element (among others). That might seem like a bad idea, but the intent
-        is to provide basic readability for unstyled pages. To eliminate the
-        gap, we overwrite the browser's default styling with the setting margin:
-        0;</p>
-        <p>Next, we set the heading's top and bottom padding to 20 pixels.</p>
-        <p>Following that, we set the heading text to be the same color as the
-        HTML background color.</p>
-        <p>Finally, text-shadow applies a shadow to the text content of the
-        element. Its four values are:</p>
-        <ul>
-          <li>The first pixel value sets the horizontal offset of the shadow from the text: how far it moves across.</li>
-           <li>The second pixel value sets the vertical offset of the shadow from the text: how far it moves down.</li>
-            <li>The third pixel value sets the blur radius of the shadow. A larger value produces a more fuzzy-looking shadow.</li>
-             <li>The fourth value sets the base color of the shadow.</li>
-        </ul>
-        <p>Try experimenting with different values to see how it changes the appearance.</p>
-        
+</pre>
+
+              <p>
+                You may have noticed there's a horrible gap at the top of the
+                body. That happens because browsers apply default styling to the
+                &lt;h1&gt; element (among others). That might seem like a bad
+                idea, but the intent is to provide basic readability for
+                unstyled pages. To eliminate the gap, we overwrite the browser's
+                default styling with the setting margin: 0;
+              </p>
+              <p>
+                Next, we set the heading's top and bottom padding to 20 pixels.
+              </p>
+              <p>
+                Following that, we set the heading text to be the same color as
+                the HTML background color.
+              </p>
+              <p>
+                Finally, text-shadow applies a shadow to the text content of the
+                element. Its four values are:
+              </p>
+              <ul>
+                <li>
+                  The first pixel value sets the horizontal offset of the shadow
+                  from the text: how far it moves across.
+                </li>
+                <li>
+                  The second pixel value sets the vertical offset of the shadow
+                  from the text: how far it moves down.
+                </li>
+                <li>
+                  The third pixel value sets the blur radius of the shadow. A
+                  larger value produces a more fuzzy-looking shadow.
+                </li>
+                <li>The fourth value sets the base color of the shadow.</li>
+              </ul>
+              <p>
+                Try experimenting with different values to see how it changes
+                the appearance.
+              </p>
             </section>
+
             <section>
-              <header id="centering-the-image">Centering the image</header>
+              <header id="centering_the_image">
+                <h3>Centering the image</h3>
+              </header>
+              <pre>
               <code>img {
   display: block;
   margin: 0 auto;
 }
 </code>
-<p>Next, we center the image to make it look better. We could use the margin: 0
-auto trick again as we did for the body. But there are differences that require
-an additional setting to make the CSS work.</p>
-<p>The &lt;body&gt; is a block element, meaning it takes up space on the page. The margin applied to a block element will be respected by other elements on the page. In contrast, images are inline elements, for the auto margin trick to work on this image, we must give it block-level behavior using display: block;.</p>
+</pre>
+              <p>
+                Next, we center the image to make it look better. We could use
+                the margin: 0 auto trick again as we did for the body. But there
+                are differences that require an additional setting to make the
+                CSS work.
+              </p>
+              <p>
+                The &lt;body&gt; is a block element, meaning it takes up space
+                on the page. The margin applied to a block element will be
+                respected by other elements on the page. In contrast, images are
+                inline elements, for the auto margin trick to work on this
+                image, we must give it block-level behavior using display:
+                block;.
+              </p>
             </section>
+
             <section class="main-section" id="conclusion">
-              <header id="conclusion">Conclusion</header>
-              <p>If you followed all the instructions in this article, you
-              should have a page that looks similar to this one:</p>
+              <header id="conclusion"><h2>Conclusion</h2></header>
+              <p>
+                If you followed all the instructions in this article, you should
+                have a page that looks similar to this one:
+              </p>
               <img
-              src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/website-screenshot-final.png">
-            
+                class="ui centered big image"
+                src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/website-screenshot-final.png"
+                alt=""
+              />
             </section>
             <section class="main-section" id="reference">
-              <header id="reference">Reference</header>
-              <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics#css_all_about_boxes">MDN</a></p>
+              <header id="reference"><h2>Reference</h2></header>
+              <p>
+                All the documentation in this page is taken from
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics#css_all_about_boxes"
+                >
+                  MDN
+                </a>
+              </p>
             </section>
           </main>
         </div>
