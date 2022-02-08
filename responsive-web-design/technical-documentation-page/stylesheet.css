@@ -6,7 +6,7 @@ code {
 }
 pre {
   overflow: auto;
-  background-color: lightgrey;
+  background-color: rgb(233, 227, 227);
 }
 pre > code {
   display: block;
