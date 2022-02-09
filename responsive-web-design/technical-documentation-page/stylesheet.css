@@ -12,3 +12,16 @@ pre > code {
   display: block;
   padding: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    border: 1px;
+    border-style: solid;
+  }
+  #navbar_container {
+    height: 20rem;
+  }
+}
