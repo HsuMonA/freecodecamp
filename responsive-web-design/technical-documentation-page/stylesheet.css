@@ -1,5 +1,15 @@
 @import "https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css";
 
+header {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-top: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
 pre,
 code {
   font-family: monospace, monospace;

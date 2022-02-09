@@ -66,7 +66,7 @@
             </section>
 
             <section class="main-section" id="what_is_css?">
-              <header id="what_is_css?"><h2>What is CSS?</h2></header>
+              <header id="what_is_css?"><h1>What is CSS?</h1></header>
               <p>
                 Like HTML, CSS is not a programming language. It's not a markup
                 language either.
@@ -96,48 +96,54 @@
                 <li>
                   Open your index.html file. Paste the following line in the
                   head (between the &lt;head&gt; and &lt;/head&gt; tags):
-                  <code>
-                    &lt;link href="styles/style.css" rel="stylesheet"&gt;
-                  </code>
+
+                  <pre><code
+>  &lt;link href="styles/style.css" rel="stylesheet"&gt;
+</code></pre>
                 </li>
                 <li>
-                  <p>
-                    Save index.html and load it in your browser. You should see
-                    something like this:
-                  </p>
-                  <img  class="ui centered big image"
+                  Save index.html and load it in your browser. You should see
+                  something like this:
+                  <li>
+                    If your paragraph text is red, congratulations! Your CSS is
+                    working.
+                  </li>
+                  <img
+                    class="ui centered big image"
                     src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/website-screenshot-styled.png"
                     alt=""
                   />
-                  <p>
-                    If your paragraph text is red, congratulations! Your CSS is
-                    working.
-                  </p>
                 </li>
               </ol>
             </section>
 
             <section class="main-section" id="anatomy_of_a_css_ruleset">
               <header id="anatomy_of_a_css_ruleset">
-                <h2>Anatomy of a CSS ruleset</h2>
+                <h1>Anatomy of a CSS ruleset</h1>
               </header>
+              <p>Let's dissect the CSS code for red paragraph text to understand how it works :</p>
+              <p>
+              <img class="ui centered big image"
+              src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png"
+              alt="" >
+              </p>
               <p>
                 The whole structure is called a ruleset. (The term ruleset is
                 often referred to as just rule.) Note the names of the
                 individual parts:
               </p>
-              <h3>Selector</h3>
+              <h2>Selector</h2>
               <p>
                 This is the HTML element name at the start of the ruleset. It
                 defines the element(s) to be styled (in this example, elements).
                 To style a different element, change the selector.
               </p>
-              <h3>Declaration</h3>
+              <h2>Declaration</h2>
               <p>
                 This is a single rule like color: red;. It specifies which of
                 the element's properties you want to style.
               </p>
-              <h3>Properties</h3>
+              <h2>Properties</h2>
               <p>
                 hese are ways in which you can style an HTML element. (In this
                 example, color is a property of the
@@ -146,7 +152,7 @@
                 elements.) In CSS, you choose which properties you want to
                 affect in the rule.
               </p>
-              <h3>Property value</h3>
+              <h2>Property value</h2>
               <p>
                 To the right of the property—after the colon—there is the
                 property value. This chooses one out of many possible
@@ -157,7 +163,7 @@
               <ul>
                 <li>
                   Apart from the selector, each ruleset must be wrapped in curly
-                  braces. ({})
+                  braces.({})
                 </li>
                 <li>
                   Within each declaration, you must use a colon (:) to separate
@@ -184,7 +190,7 @@
 
             <section class="main-section" id="selecting_multiple_elements">
               <header id="selecting_multiple_elements">
-                <h2>Selecting multiple elements</h2>
+                <h1>Selecting multiple elements</h1>
               </header>
               <p>
                 You can also select multiple elements and apply a single ruleset
@@ -193,7 +199,7 @@
               </p>
               <pre><code
 >p, li, h1 {
-  color: red; 
+  color: red;
 }
 </code></pre>
 
@@ -201,7 +207,7 @@
             </section>
 
             <section class="main-section" id="fonts_and_text">
-              <header id="fonts_and_text"><h2>Fonts and text</h2></header>
+              <header id="fonts_and_text"><h1>Fonts and text</h1></header>
               <p>
                 Now that we've explored some CSS fundamentals, let's improve the
                 appearance of the example by adding more rules and information
@@ -209,39 +215,34 @@
               </p>
               <ol>
                 <li>
-                  <p>
-                    First, find the output from Google Fonts that you previously
-                    saved from What will your website look like?. Add the
-                    &lt;link&gt; element somewhere inside your index.html's head
-                    (anywhere between the &lt;head&gt; and &lt;head&gt; tags).
-                    It looks something like this:
-                  </p>
-                  &lt;link
-                  href="https://fonts.googleapis.com/css?family=Open+Sans"
-                  rel="stylesheet" &gt;
-                  <p>
-                    This code links your page to a style sheet that loads the
-                    Open Sans font family with your webpage.
-                  </p>
+                  First, find the output from Google Fonts that you previously
+                  saved from What will your website look like?. Add the
+                  &lt;link&gt; element somewhere inside your index.html's head
+                  (anywhere between the &lt;head&gt; and &lt;head&gt; tags). It
+                  looks something like this:
+
+                  <pre><code
+>&lt;link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" &gt;
+</code></pre>
+
+                  This code links your page to a style sheet that loads the Open
+                  Sans font family with your webpage.
                 </li>
                 <li>
-                  <p>
-                    Next, delete the existing rule you have in your style.css
-                    file. It was a good test, but let's not continue with lots
-                    of red text.
-                  </p>
+                  Next, delete the existing rule you have in your style.css
+                  file. It was a good test, but let's not continue with lots of
+                  red text.
                 </li>
                 <li>
-                  <p>
-                    Add the following lines (shown below), replacing the
-                    font-family assignment with your font-family selection from
-                    What will your website look like?. The property font-family
-                    refers to the font(s) you want to use for text. This rule
-                    defines a global base font and font size for the whole page.
-                    Since &lt;html&gt; is the parent element of the whole page,
-                    all elements inside it inherit the same font-size and
-                    font-family.
-                  </p>
+                  Add the following lines (shown below), replacing the
+                  font-family assignment with your font-family selection from
+                  What will your website look like?. The property font-family
+                  refers to the font(s) you want to use for text. This rule
+                  defines a global base font and font size for the whole page.
+                  Since &lt;html&gt; is the parent element of the whole page,
+                  all elements inside it inherit the same font-size and
+                  font-family.
+
                   <pre><code
 >html {
   font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
@@ -250,14 +251,12 @@
 </code></pre>
                 </li>
                 <li>
-                  <p>
-                    Now let's set font sizes for elements that will have text
-                    inside the HTML body (&lt;h1&gt;, &lt;li&gt;, and
-                    &lt;p&gt;). We'll also center the heading. Finally, let's
-                    expand the second ruleset (below) with settings for line
-                    height and letter spacing to make body content more
-                    readable.
-                  </p>
+                  Now let's set font sizes for elements that will have text
+                  inside the HTML body (&lt;h1&gt;, &lt;li&gt;, and &lt;p&gt;).
+                  We'll also center the heading. Finally, let's expand the
+                  second ruleset (below) with settings for line height and
+                  letter spacing to make body content more readable.
+
                   <pre><code
 >h1 {
   font-size: 60px;
@@ -270,23 +269,21 @@ p, li {
 }
 </code></pre>
 
-                  <p>
-                    Adjust the px values as you like.Your work-in-progress
-                    should look similar to this:
+                  Adjust the px values as you like.Your work-in-progress should
+                  look similar to this:
 
-                    <img
-                      class="ui centered big image"
-                      src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/website-screenshot-font-small.png"
-                      alt=""
-                    />
-                  </p>
+                  <img
+                    class="ui centered big image"
+                    src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/website-screenshot-font-small.png"
+                    alt=""
+                  />
                 </li>
               </ol>
             </section>
 
             <section class="main-section" id="css:_all_about_boxes">
               <header id="css:_all_about_boxes">
-                <h2>CSS: all about boxes</h2>
+                <h1>CSS: all about boxes</h1>
               </header>
               <p>
                 Something you'll notice about writing CSS: a lot of it is about
@@ -308,7 +305,8 @@ p, li {
                 </li>
                 <li>margin, the space around the outside of the border.</li>
               </ul>
-              <img  class="ui centered big image"
+              <img
+                class="ui centered big image"
                 src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/box-model.png"
                 alt=""
               />
@@ -340,7 +338,7 @@ p, li {
 
             <section>
               <header id="changing-the-page-color">
-                <h3>Changing the page color</h3>
+                <h2>Changing the page color</h2>
               </header>
               <pre><code
 >html { 
@@ -353,7 +351,7 @@ p, li {
                 the color code to the color you chose in What will my website
                 look like?.
               </p>
-              <header id="styling-the-body"><h3>Stying the body</h3></header>
+              <header id="styling-the-body"><h2>Stying the body</h2></header>
               <pre><code
 >body {
   width: 600px;
@@ -407,7 +405,7 @@ p, li {
 
             <section>
               <header id="positioning_and_styling_the_main_page_title">
-                <h3>Positioning and styling the main page title</h3>
+                <h2>Positioning and styling the main page title</h2>
               </header>
               <pre><code
 >h1 {
@@ -460,7 +458,7 @@ p, li {
 
             <section>
               <header id="centering_the_image">
-                <h3>Centering the image</h3>
+                <h2>Centering the image</h2>
               </header>
 
               <pre><code
@@ -486,7 +484,7 @@ p, li {
             </section>
 
             <section class="main-section" id="conclusion">
-              <header id="conclusion"><h2>Conclusion</h2></header>
+              <header id="conclusion"><h1>Conclusion</h1></header>
               <p>
                 If you followed all the instructions in this article, you should
                 have a page that looks similar to this one:
@@ -498,7 +496,7 @@ p, li {
               />
             </section>
             <section class="main-section" id="reference">
-              <header id="reference"><h2>Reference</h2></header>
+              <header id="reference"><h1>Reference</h1></header>
               <p>
                 All the documentation in this page is taken from
                 <a
