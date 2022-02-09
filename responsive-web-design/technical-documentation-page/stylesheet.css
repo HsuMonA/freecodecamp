@@ -1,5 +1,18 @@
-@import "https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css";
 
+@import "https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+body{
+  font-family: 'Arimo', sans-serif;
+}
+#main-doc {
+  margin-left: 20.625rem;
+  margin-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  
+
+}
 header {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -23,7 +36,8 @@ pre > code {
   padding: 1rem;
 }
 
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 768px) {
   #navbar {
     position: relative;
     width: 100%;
@@ -33,5 +47,9 @@ pre > code {
   }
   #navbar_container {
     height: 20rem;
+  }
+  #main-doc {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
