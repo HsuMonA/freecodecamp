@@ -1,29 +1,18 @@
-function convertToRoman(num) {
-  let numbers = {
-    M: 1000,
-    CM: 900,
-    D: 500,
-    CD: 400,
-    C: 100,
-    XC: 90,
-    L: 50,
-    XL: 40,
-    X: 10,
-    IX: 9,
-    V: 5,
-    IV: 4,
-    I: 1,
-  };
+function rot13(str) {
+  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let newStr = [];
+  let letter;
 
-  let result = "";
-
-  for (let key in numbers) {
-    while (num >= numbers[key]) {
-      num = num - numbers[key];
-      result = result + key;
+  for (let i = 0; i < str.length; i++) {
+    letter = str[i]; // get the letter of str
+    if (alphabet.includes(letter)) {
+      // if the letter is in alphabet
+      newStr.push(alphabet[(alphabet.indexOf(letter) + 13) % 26]); // decrypt letter and add letter in the newStr
+    } else {
+      newStr.push(letter); // add letter in the newStr
     }
   }
-  return result;
+  return newStr.join(""); // to put all the letters in string instead of ["F", "R", "E", "E"] to FREE
 }
 
-console.log(convertToRoman(68));
+console.log(rot13("SERR YBIR?"));
