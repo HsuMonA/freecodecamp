@@ -1,0 +1,13 @@
+{
+  "name": "freecodecamp",
+  "version": "1.0.0",
+  "description": "My FreeCodeCamp Projects",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HsuMonA/freecodecamp.git"
+  },
+  "homepage": "https://github.com/HsuMonA/freecodecamp#readme",
+  "workspaces": [
+    "front-end-development-libraries\\random-quote-machine"
+  ]
+}
