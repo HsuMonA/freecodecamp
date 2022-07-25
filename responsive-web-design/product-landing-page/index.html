@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Café</title>
+
+    <link href="stylesheet.css" rel="stylesheet" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+      });
+    </script>
+  </head>
+  <body class="has-navbar-fixed-top">
+    <header id="header">
+      <nav
+        id="nav-bar"
+        class="navbar is-fixed-top"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img
+              src="https://raw.githubusercontent.com/HsuMonA/freecodecamp/main/responsive-web-design/product-landing-page/logo.png"
+              id="header-img"
+              alt="Cat café logo"
+            />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbar"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbar" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item nav-link" href="#introduction">
+              Introduction
+            </a>
+
+            <a class="navbar-item nav-link" href="#features">Features</a>
+
+            <a class="navbar-item nav-link" href="#pricing">Pricing</a>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Get started</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="introduction">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-flex">
+            <div class="box">
+              <h1 class="is-size-3">Cat Café</h1>
+              <p>
+                Welcome to Cat Café! Meow!
+                <br />
+                Here is just about the cutest pet of the world: Cat!
+                <br />
+                Relax, play and enjoy your time with our cats by tasting our
+                delicious home made foods and drinks.
+                <br />
+                20+ cats with their own personality, beauty and story are
+                waiting for you!
+              </p>
+            </div>
+          </div>
+          <div class="column is-two-thirds">
+            <div class="block">
+              <video id="video" class="cat-video.mp4" loop autoplay muted>
+                <source src="cat-video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <div class="block">
+              <figure class="image is-2by3">
+                <img
+                  src="kitties.jpg"
+                  alt="Kitties pic"
+                  class="kitties-image"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="column is-two-thirds-tablet">
+            <div class="content">
+              <h1 class="has-text-centered my-3">Product features</h1>
+              <p class="has-text-centered">
+                At Cat Café, we give you the best service to spend time with the
+                little fluffy felines:
+              </p>
+              <ul class="key-benefits">
+                <li class="my-3">
+                  <h2>Home Made</h2>
+                  <p>
+                    At Cat Café, we aim for the best. For our cats but also for
+                    you.
+                    <br />
+                    We provide home made and high quality foods: fresh drinks,
+                    delicious sandwiches, cute cupcakes and more! Yummy!
+                  </p>
+                </li>
+                <li class="my-3">
+                  <h2>Fun</h2>
+                  <p>
+                    It is not only about cats, it is also about YOU! At Cat
+                    Café, you can enjoy for free books, musics or movies
+                    surrounded by purring neighbours (We mean cats! Nothing
+                    else!).
+                  </p>
+                </li>
+                <li class="my-3">
+                  <h2>Private</h2>
+                  <p>
+                    You don't like when someone suddenly steals the cat you are
+                    playing with, us neither. For this reason, we have made
+                    private rooms available for you and your favourite cats.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div class="box">
+              <h1 class="has-text-centered title is-4">Pricing Plan</h1>
+              <p class="has-text-centered">
+                Ready to have fun with our cats? Here are our 3 different packs
+                to enjoy your time with them.
+              </p>
+            </div>
+
+            <div class="columns">
+              <div class="column">
+                <div class="card">
+                  <header class="card-header has-background-grey-lighter">
+                    <p
+                      class="card-header-title is-justify-content-center title is-5"
+                    >
+                      Kitten Pack
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <p
+                        class="card-header-title is-justify-content-center title is-5"
+                      >
+                        &dollar;15/month
+                      </p>
+                      <ul>
+                        <li>1 hour maximum per week</li>
+                        <li>Cat snacks (&dollar;5 / snack)</li>
+                        <li>Books, music, movies</li>
+                        <li>Cat toys</li>
+                        <li>Public room shared with other cat fans</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <footer class="card-footer">
+                    <div class="buttons is-centered card-footer-item">
+                      <button class="button is-primary">Sign Up</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <header class="card-header has-background-grey-lighter">
+                    <p
+                      class="card-header-title is-justify-content-center title is-5"
+                    >
+                      Lynx Pack
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <p
+                        class="card-header-title is-justify-content-center title is-5"
+                      >
+                        &dollar;30/month
+                      </p>
+                      <ul>
+                        <li>2 hours per week</li>
+                        <li>Free cat snacks</li>
+                        <li>Books, music, movies</li>
+                        <li>Cat toys</li>
+                        <li>1 free drink per week</li>
+                        <li>1 small private room (2 cats maximum)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <footer class="card-footer">
+                    <div class="buttons is-centered card-footer-item">
+                      <button class="button is-primary">Sign Up</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <header class="card-header has-background-grey-lighter">
+                    <p
+                      class="card-header-title is-justify-content-center title is-5"
+                    >
+                      Tiger Pack
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <div class="content">
+                      <p
+                        class="card-header-title is-justify-content-center title is-5"
+                      >
+                        &dollar;50/month
+                      </p>
+                      <ul>
+                        <li>Unlimited hour per week</li>
+                        <li>Free cat snacks</li>
+                        <li>Books, music, movies</li>
+                        <li>Cat toys</li>
+                        <li>1 free menu (drink + cake)</li>
+                        <li>1 small private room (5 cats maximum)</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <footer class="card-footer">
+                    <div class="buttons is-centered card-footer-item">
+                      <button class="button is-primary">Sign Up</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div>
+              <h1>
+                <i class="fas fa-paw"></i>
+                About us
+              </h1>
+              <p class="mt-2">
+                This is a fake cat café. If you think it exists, sorry to give
+                you hope.
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <h1>Location</h1>
+              <p class="mt-2">
+                000 Kitty Avenue,
+                <br />
+                Kitty City,
+                <br />
+                Kitty State 00000,
+                <br />
+                Kitty Country
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div>
+              <h1 class="is-uppercase">Subscribe</h1>
+              <p class="mt-2">
+                Sign up if you want to stay up to date and recieve
+                notifications.
+              </p>
+            </div>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+              <div class="field is-grouped">
+                <p class="control is-expanded">
+                  <input
+                    class="input is-primary"
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                  />
+                </p>
+                <p class="control">
+                  <input
+                    class="button is-success"
+                    id="submit"
+                    type="submit"
+                    value="Submit"
+                  />
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

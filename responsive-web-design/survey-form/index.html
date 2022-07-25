@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Survey</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="stylesheet.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h1 id="title" class="text-center">Restaurant Survey</h1>
+      </header>
+
+      <div class="container page-container">
+        <div class="introduction">
+          <p id="description">Please Review Us.</p>
+          <p>Please let us know how was the food and service.</p>
+        </div>
+        <hr />
+        <form id="survey-form">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label for="day-visited" class="form-label">Day Visted</label>
+              </div>
+              <div class="col">
+                <input type="date" class="form-control" id="day-visited" />
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label id="dine-in/take-out">Dine In/ Take Out</label>
+              </div>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="service"
+                    id="dine-in"
+                    value="dine-in"
+                    checked
+                  />
+                  <label class="form-check-label" for="dine-in">Dine In</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="service"
+                    id="take-out"
+                    value="take-out"
+                  />
+                  <label class="form-check-label" for="take-out"></label>
+                    Take Out
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label id="courses">What was your favourite meal course?</label>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="meal-course"
+                        value="appetizer"
+                        id="appetizer"
+                      />
+                      <label class="form-check-label" for="appetizer">
+                        Appetizer
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="meal-course"
+                        value="main-course"
+                        id="main-course"
+                      />
+                      <label class="form-check-label" for="main-course">
+                        Main course
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        name="meal-course"
+                        value="dessert"
+                        id="dessert"
+                      />
+                      <label class="from-check-label" for="dessert">
+                        Dessert
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label id="food-quality">Food Quality</label>
+              </div>
+              <div class="w-100 d-none d-md-block"></div>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="food-quality"
+                    value="excellent"
+                    id="food-quality--excellent"
+                  />
+                  <label class="form-check-label" for="food-quality--excellent">
+                    Excellent
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="food-quality"
+                    value="good"
+                    id="food-quality--good"
+                  />
+                  <label class="form-check-label" for="food-quality--good">
+                    Good
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="food-quality"
+                    value="average"
+                    id="food-quality--average"
+                  />
+                  <label class="form-check-label" for="food-quality--average">
+                    Average
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="food-quality"
+                    value="dissatisfied"
+                    id="food-quality--dissatisfied"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="food-quality--dissatisfied"
+                  >
+                    Dissatisfied
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label id="overall-service-quality">
+                  Overall Service Quality
+                </label>
+              </div>
+              <div class="w-100 d-none d-md-block"></div>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="overall-service-quality"
+                    value="excellent"
+                    id="overall-service-quality--excellent"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="overall-service-quality--excellent"
+                  >
+                    Excellent
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="overall-service-quality"
+                    value="good"
+                    id="overall-service-quality--good"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="overall-service-quality--good"
+                  >
+                    Good
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="overall-service-quality"
+                    value="average"
+                    id="overall-service-quality--average"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="overall-service-quality--average"
+                  >
+                    Average
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="overall-service-quality"
+                    value="dissatisfied"
+                    id="overall-service-quality--dissatisfied"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="overall-service-quality--dissatisfied"
+                  >
+                    Dissatisfied
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label id="cleanliness">Cleanliness</label>
+              </div>
+              <div class="w-100 d-none d-md-block"></div>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="cleanliness"
+                    value="excellent"
+                    id="cleanliness--excellent"
+                  />
+                  <label class="form-check-label" for="cleanliness--excellent">
+                    Excellent
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="cleanliness"
+                    value="good"
+                    id="cleanliness--good"
+                  />
+                  <label class="form-check-label" for="cleanliness--good">
+                    Good
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="cleanliness"
+                    value="average"
+                    id="cleanliness--average"
+                  />
+                  <label class="form-check-label" for="cleanliness--average">
+                    Average
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="cleanliness"
+                    value="dissatisfied"
+                    id="cleanliness--dissatisfied"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="cleanliness--dissatisfied"
+                  >
+                    Dissatisfied
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label id="orderaccuracy">Order Accuracy</label>
+              </div>
+              <div class="w-100 d-none d-md-block"></div>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="orderaccuracy"
+                    value="excellent"
+                    id="orderaccuracy--excellent"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="orderaccuracy--excellent"
+                  >
+                    Excellent
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="orderaccuracy"
+                    value="good"
+                    id="orderaccuracy--good"
+                  />
+                  <label class="form-check-label" for="orderaccuracy--good">
+                    Good
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="orderaccuracy"
+                    value="average"
+                    id="orderaccuracy--average"
+                  />
+                  <label class="form-check-label" for="orderaccuracy--average">
+                    Average
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="orderaccuracy"
+                    value="dissatisfied"
+                    id="orderaccuracy--dissatisfied"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="orderaccuracy--dissatisfied"
+                  >
+                    Dissatisfied
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label id="speed-of-service">Speed of Service</label>
+              </div>
+              <div class="w-100 d-none d-md-block"></div>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="speed-of-service"
+                    value="excellent"
+                    id="speed-of-service--excellent"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="speed-of-service--excellent"
+                  >
+                    Excellent
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="speed-of-service"
+                    value="good"
+                    id="speed-of-service--good"
+                  />
+                  <label class="form-check-label" for="speed-of-service--good">
+                    Good
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="speed-of-service"
+                    value="average"
+                    id="speed-of-service--average"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="speed-of-service--average"
+                  >
+                    Average
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="speed-of-service"
+                    value="dissatisfied"
+                    id="speed-of-service--dissatisfied"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="speed-of-service--dissatisfied"
+                  >
+                    Dissatisfied
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label id="value">Value</label>
+              </div>
+              <div class="w-100 d-none d-md-block"></div>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="value"
+                    value="excellent"
+                    id="value--excellent"
+                  />
+                  <label class="form-check-label" for="value--excellent">
+                    Excellent
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="value"
+                    value="good"
+                    id="value--good"
+                  />
+                  <label class="form-check-label" for="value--good">Good</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="value"
+                    value="average"
+                    id="value--average"
+                  />
+                  <label class="form-check-label" for="value--average">
+                    Average
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="value"
+                    value="dissatisfied"
+                    id="value--dissatisfied"
+                  />
+                  <label class="form-check-label" for="value--dissatisfied">
+                    Dissatisfied
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label for="number" id="number-label" class="form-label">
+                  Overall Experience: How many points would you give us?(
+                  between 1 and 10)
+                </label>
+              </div>
+              <div class="col">
+                <input
+                  class="form-control"
+                  type="number"
+                  name="number"
+                  id="number"
+                  min="1"
+                  max="10"
+                  placeholder="between 1-10"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label for="comments" class="form-label">
+                  Any comments, questions, or suggestions?
+                </label>
+              </div>
+              <div class="col">
+                <textarea
+                  class="form-control"
+                  name="comments"
+                  placeholder="Please leave a comment here.."
+                  id="comments"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label for="name" class="form-label" id="name-label">
+                  Name
+                </label>
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Name"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label for="dropdown">Age</label>
+              </div>
+              <div class="col">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  name="age"
+                  id="dropdown"
+                >
+                  <option selected>Please select the age</option>
+                  <option value="under 13">under 13</option>
+                  <option value="13-17">13-17</option>
+                  <option value="18-24">18-24</option>
+                  <option value="25-34">25-34</option>
+                  <option value="35-44">35-44</option>
+                  <option value="45-54">45-54</option>
+                  <option value="55-or-older">55 or older</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <label for="email" class="form-label" id="email-label">
+                  E-mail
+                </label>
+              </div>
+              <div class="col">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="email"
+                  placeholder="name@example.com"
+                  pattern="[^ @]*@[^ @]*"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="d-grid col-6 mx-auto">
+            <input
+              type="submit"
+              class="btn btn-primary"
+              id="submit"
+              value="submit"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

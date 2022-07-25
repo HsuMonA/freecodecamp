@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap");
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import "https://use.fontawesome.com/releases/v5.8.1/css/all.css";
+
+/* BEGIN: these are for the sticky navbar */
+html {
+  scroll-padding-top: 5.5rem;
+}
+nav {
+  height: 5.5rem;
+}
+body.has-navbar-fixed-top {
+  padding-top: 5.5rem;
+}
+/* END */
+
+body {
+  font-family: "Arimo", sans-serif;
+}
+
+#header-img {
+  min-height: 4.5rem;
+}
+
+.key-benefits li {
+  padding-left: 1.3em;
+}
+.key-benefits li::marker {
+  content: "\f1b0";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.5em;
+  color: #b64d3a;
+}
+.card-footer {
+  border-top: 0;
+  margin-top: auto;
+}
+.card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    scroll-padding-top: 3.5rem;
+  }
+  nav {
+    height: 3.5rem;
+  }
+  body.has-navbar-fixed-top {
+    padding-top: 3.5rem;
+  }
+  #header-img {
+    min-height: 2.5rem;
+  }
+}

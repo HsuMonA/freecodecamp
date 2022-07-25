@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-pt-16">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="responsive-web-design/portfolio-page/stylesheet.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio Webpage</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-40">
+      <nav
+        id="navbar"
+        class="bg-rose-100 mx-auto sm:px-6 lg:px-8 flex flex-1 items-center h-16 justify-center space-x-4 sm:justify-end"
+      >
+        <a
+          href="#welcome-section"
+          class="text-amber-900 px-4 py-4 border-b-transparent border-b-4 hover:text-sky-500 hover:border-b-rose-300 text-lg font-bold"
+        >
+          About
+        </a>
+
+        <a
+          href="#projects"
+          class="text-amber-900 px-4 py-4 border-b-transparent border-b-4 hover:text-sky-500 hover:border-b-rose-300 text-lg font-bold"
+        >
+          Work
+        </a>
+
+        <a
+          href="#contact"
+          class="text-amber-900 px-4 py-4 border-b-transparent border-b-4 hover:text-sky-500 hover:border-b-rose-300 text-lg font-bold"
+        >
+          Contact
+        </a>
+      </nav>
+    </header>
+
+    <section
+      id="welcome-section"
+      class="grid gap-4 grid-cols-1 md:grid-cols-2 md:h-screen bg-rose-100"
+    >
+      <div
+        class="flex flex-col font-bold text-amber-900 text-center md:text-left gap-y-4 pt-20 pl-4 sm:pl-10 md:pl-20 lg:pl-40"
+      >
+        <h1 class="text-7xl">Hi,</h1>
+        <p class="text-7xl">I'm Hsu.</p>
+        <p class="text-4xl">On the way to be a web developer.</p>
+      </div>
+
+      <figure class="flex items-center justify-center p-4 sm:p-0">
+        <img
+          class="max-h-[80vh] object-cover rounded-full border-4 border-white shadow-lg shadow-rose-900/40 bg-white"
+          src="responsive-web-design/portfolio-page/portrait.png"
+          alt="portrait"
+        />
+      </figure>
+    </section>
+
+    <section id="projects" class="grid justify-items-center bg-green-50">
+      <h2
+        class="text-center text-2xl font-bold text-amber-900 my-8 col-span-full"
+      >
+        These are some of my projects
+      </h2>
+      <div class="grid gap-6 col-start-2 cards">
+        <a
+          class="transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:duration-300 border-4 border-solid border-white rounded shadow-xl bg-white p-2 project-tile tribute-page"
+          target="_blank"
+          href="responsive-web-design\tribute-page\index.html"
+        >
+          <figure>
+            <img
+              src="responsive-web-design/portfolio-page/gandhi.png"
+              alt="screenshot of tribute page"
+              class="object-cover border-2 border-transparent w-full"
+            />
+            <figcaption class="text-center font-bold text-amber-900 py-2">
+              Tribute Page (CSS)
+            </figcaption>
+          </figure>
+        </a>
+        <a
+          class="transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:duration-300 border-4 border-solid border-white rounded shadow-xl bg-white p-2 project-tile survey-form"
+          target="_blank"
+          href="responsive-web-design\survey-form\index.html"
+        >
+          <figure>
+            <img
+              src="responsive-web-design/portfolio-page/survey.png"
+              alt="screenshot of survey form"
+              class="object-cover border-2 border-transparent w-full"
+            />
+            <figcaption class="text-center font-bold text-amber-900 py-2">
+              Survey Form (Bootstrap)
+            </figcaption>
+          </figure>
+        </a>
+        <a
+          class="transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:duration-300 border-4 border-solid border-white rounded shadow-xl bg-white p-2 project-tile product-landing-page"
+          target="_blank"
+          href="responsive-web-design\product-landing-page\index.html"
+        >
+          <figure>
+            <img
+              src="responsive-web-design/portfolio-page/product.png"
+              alt="screenshot of product landing page"
+              class="object-cover border-2 border-transparent w-full"
+            />
+            <figcaption class="text-center font-bold text-amber-900 py-2">
+              Product landing Page (Bulma)
+            </figcaption>
+          </figure>
+        </a>
+
+        <a
+          class="transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:duration-300 border-4 border-solid border-white rounded shadow-xl bg-white p-2 project-tile technical-documentation-page"
+          target="_blank"
+          href="responsive-web-design\technical-documentation-page\index.html"
+        >
+          <figure>
+            <img
+              src="responsive-web-design/portfolio-page/tech.png"
+              alt="screenshot of technical
+        documentation page"
+              class="object-cover border-2 border-transparent w-full"
+            />
+            <figcaption class="text-center font-bold text-amber-900 py-2">
+              Technical Documentation Page (Semantic UI)
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+      <a
+        id="profile-link"
+        class="text-center text-lg text-white my-8 col-span-full border-2 rounded py-2 px-8 bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700"
+        href="https://github.com/HsuMonA/freecodecamp"
+        target="_blank"
+      >
+        Show all
+      </a>
+    </section>
+
+    <footer
+      id="contact"
+      class="grid gap-6 justify-items-center py-4 bg-yellow-50 text-amber-900 font-bold"
+    >
+      <h2 class="col-span-full text-center text-4xl">Get in Touch</h2>
+      <div class="flex flex-wrap justify-center sm:flex-nowrap gap-4">
+        <a
+          class="transition ease-in-out bg-white hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300 border-2 border-orange-300 rounded py-2 px-4"
+          id="profile-link"
+          href="https://www.freecodecamp.org/HsuMonA"
+          target="_blank"
+        >
+          <i class="fab fa-free-code-camp fa-lg"></i>
+          FreeCodeCamp
+        </a>
+        <a
+          class="transition ease-in-out bg-white hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300 border-2 border-orange-300 rounded py-2 px-4"
+          id="profile-link"
+          href="https://github.com/HsuMonA"
+          target="_blank"
+        >
+          <i class="fab fa-github fa-lg"></i>
+          GitHub
+        </a>
+      </div>
+
+      <p class="col-span-full text-center text-sm">
+        &copy;2022 Designed &#38; developed by Hsu with Tailwind CSS.
+        <a class="underline" id="license" href="license.html" target="_blank">
+          License.
+        </a>
+      </p>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
