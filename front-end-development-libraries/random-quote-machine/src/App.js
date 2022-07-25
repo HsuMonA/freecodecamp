@@ -43,7 +43,7 @@ function App() {
     "forestgreen",
     "indianred",
     "sandybrown",
-    "tan",
+    "RosyBrown",
     "tomato",
     "steelblue",
   ];
@@ -55,7 +55,7 @@ function App() {
     "forestgreen",
     "indianred",
     "sandybrown",
-    "tan",
+    "RosyBrown",
     "tomato",
     "steelblue",
   ];
