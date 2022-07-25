@@ -99,7 +99,7 @@ function App() {
                 id="tweet-quote"
                 href="https://twitter.com/intent/tweet"
                 target="_blank"
-                style={{ backgroundColor: backgroundColor }}
+                style={{ backgroundColor: backgroundColor, border: "none" }}
               >
                 <FontAwesomeIcon icon="fab fa-twitter" />
               </Button>
@@ -107,7 +107,7 @@ function App() {
                 id="tumblr-quote"
                 href="https://www.tumblr.com/explore/trending?source=homepage_explore"
                 target="_blank"
-                style={{ backgroundColor: backgroundColor }}
+                style={{ backgroundColor: backgroundColor, border: "none" }}
               >
                 <FontAwesomeIcon icon="fab fa-tumblr" />
               </Button>
@@ -115,8 +115,7 @@ function App() {
             <Button
               id="new-quote"
               onClick={randomize}
-              variant="primary"
-              style={{ backgroundColor: backgroundColor }}
+              style={{ backgroundColor: backgroundColor, border: "none" }}
             >
               New quote
             </Button>
