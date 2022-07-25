@@ -38,10 +38,6 @@
 1. Be sure that the folder is root
 1. Click on save
 
-## How to deploy a project?
-
-1. npm run deploy -w random-quote-machine
-
 ## How to update HTML from responsive-web-design?
 
 1. Update and push to the main branch.
