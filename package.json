@@ -8,6 +8,7 @@
   },
   "homepage": "https://github.com/HsuMonA/freecodecamp#readme",
   "workspaces": [
-    "front-end-development-libraries\\random-quote-machine"
+    "front-end-development-libraries\\random-quote-machine",
+    "front-end-development-libraries\\markdown-previewer"
   ]
 }
