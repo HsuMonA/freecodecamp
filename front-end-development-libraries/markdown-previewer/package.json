@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -e ./front-end-development-libraries/random-quote-machine"
+    "deploy": "gh-pages -d build -e ./front-end-development-libraries/markdown-previewer"
   },
   "eslintConfig": {
     "extends": [
