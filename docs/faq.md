@@ -13,10 +13,13 @@
    import "bootstrap/dist/css/bootstrap.min.css";
    ```
 1. npm install gh-pages -w random-quote-machine --save-dev
-1. [Add those lines inside package.json under "scripts":
+1. [Add those lines inside package.json under "scripts"]:
+
+   ```json
    "predeploy": "npm run build",
    "deploy": "gh-pages -d build -e ./front-end-development-libraries/random-quote-machine"
-   ]
+   ```
+
 1. In package.json in random-quote-machine, set "homepage" to "."
 1. Add the below freecodecamp `<script>` before the end of `</body>` from public/index.html
    ```html
