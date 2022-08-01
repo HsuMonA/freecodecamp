@@ -1,7 +1,20 @@
-table, th, td {
-  border:1px solid black;
+table {
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
 }
 img {
   max-width: 100%;
   height: auto;
+}
+blockquote {
+  border-left: 3px solid #ccc;
+  margin: 1rem 1rem;
+  padding: 0.25rem 1rem;
+}
+blockquote p {
+  display: inline;
 }
