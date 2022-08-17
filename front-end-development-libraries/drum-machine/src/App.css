@@ -1,0 +1,13 @@
+#drum-machine {
+    background-color: white;
+}
+#main {
+    max-width: 35rem;
+    height: 25rem;
+    --bs-border-color: grey;
+    background-color: lightsteelblue;
+    border-style: outset;
+}
+.title {
+    color: darkorange;
+}

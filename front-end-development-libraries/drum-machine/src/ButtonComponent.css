@@ -1,0 +1,11 @@
+.drum-pad {
+    width: 80%;
+    height: 6rem;
+    --bs-btn-color: black;
+    --bs-btn-hover-bg: aliceblue;
+    --bs-btn-hover-color: darkcyan;
+    --bs-btn-active-color: white;
+    background-color: aliceblue;
+    border: none;
+
+}
