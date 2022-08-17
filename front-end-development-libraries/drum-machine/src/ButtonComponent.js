@@ -12,7 +12,7 @@ function ButtonComponent(props) {
   const sound = useRef();
   return (
     <div
-      className={`${props.className} btn rounded-3 shadow fw-semibold`}
+      className={`${props.className} btn rounded-3 fw-semibold`}
       id={props.id}
       onClick={() => {
         props.setLetter(props.letter);

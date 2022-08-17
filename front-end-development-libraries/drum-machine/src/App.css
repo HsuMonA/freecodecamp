@@ -1,11 +1,11 @@
 #drum-machine {
-    background-color: white;
+    background-color: lavender;
 }
 #main {
     max-width: 35rem;
     height: 25rem;
     --bs-border-color: grey;
-    background-color: lightsteelblue;
+    background-color: gainsboro;
     border-style: outset;
 }
 .title {

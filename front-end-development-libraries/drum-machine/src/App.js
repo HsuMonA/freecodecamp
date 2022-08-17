@@ -20,8 +20,7 @@ function App() {
           <Col>
             <p className="fw-bold fs-4 fst-italic title">Drum Machine</p>
           </Col>
-          <Col></Col>
-          <Col>
+          <Col xs={6} sm={4}>
             <DisplayComponent
               id="display"
               letter={letter}
@@ -33,7 +32,7 @@ function App() {
           <Col>
             <ButtonComponent
               id="Q"
-              className="drum-pad"
+              className="drum-pad group-1"
               letter="Q"
               src="drum-sounds/Q.wav"
               setLetter={setLetter}
@@ -42,7 +41,7 @@ function App() {
           <Col>
             <ButtonComponent
               id="W"
-              className="drum-pad"
+              className="drum-pad group-1"
               letter="W"
               src="drum-sounds/W.wav"
               setLetter={setLetter}
@@ -51,7 +50,7 @@ function App() {
           <Col>
             <ButtonComponent
               id="E"
-              className="drum-pad"
+              className="drum-pad group-1"
               letter="E"
               src="drum-sounds/E.wav"
               setLetter={setLetter}
@@ -62,7 +61,7 @@ function App() {
           <Col>
             <ButtonComponent
               id="A"
-              className="drum-pad"
+              className="drum-pad group-2"
               letter="A"
               src="drum-sounds/A.wav"
               setLetter={setLetter}
@@ -71,7 +70,7 @@ function App() {
           <Col>
             <ButtonComponent
               id="S"
-              className="drum-pad"
+              className="drum-pad group-2"
               letter="S"
               src="drum-sounds/S.wav"
               setLetter={setLetter}
@@ -80,7 +79,7 @@ function App() {
           <Col>
             <ButtonComponent
               id="D"
-              className="drum-pad"
+              className="drum-pad group-2"
               letter="D"
               src="drum-sounds/D.wav"
               setLetter={setLetter}
@@ -91,7 +90,7 @@ function App() {
           <Col>
             <ButtonComponent
               id="Z"
-              className="drum-pad"
+              className="drum-pad group-3"
               letter="Z"
               src="drum-sounds/Z.wav"
               setLetter={setLetter}
@@ -100,7 +99,7 @@ function App() {
           <Col>
             <ButtonComponent
               id="X"
-              className="drum-pad"
+              className="drum-pad group-3"
               letter="X"
               src="drum-sounds/X.wav"
               setLetter={setLetter}
@@ -109,7 +108,7 @@ function App() {
           <Col>
             <ButtonComponent
               id="C"
-              className="drum-pad"
+              className="drum-pad group-3"
               letter="C"
               src="drum-sounds/C.wav"
               setLetter={setLetter}
