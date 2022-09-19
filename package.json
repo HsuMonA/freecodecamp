@@ -10,6 +10,7 @@
   "workspaces": [
     "front-end-development-libraries\\random-quote-machine",
     "front-end-development-libraries\\markdown-previewer",
-    "front-end-development-libraries\\drum-machine"
+    "front-end-development-libraries\\drum-machine",
+    "front-end-development-libraries\\javascript-calculator"
   ]
 }
