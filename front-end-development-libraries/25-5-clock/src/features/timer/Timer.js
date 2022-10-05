@@ -92,7 +92,7 @@ function Timer() {
       </div>
       <button
         id="start_stop"
-        className="control-button border-2 w-25"
+        className="control-button w-25"
         onClick={() =>
           startTimer === false ? setStartTimer(true) : setStartTimer(false)
         } // start the timer, stop the timer
@@ -102,7 +102,7 @@ function Timer() {
       </button>
       <button
         id="reset"
-        className="control-button reset border-2 w-25"
+        className="control-button w-25"
         onClick={() => {
           dispatch(resetBreak());
           dispatch(resetSession());

@@ -13,7 +13,7 @@ function Session() {
       <div>Session</div>
       <button
         id="session-decrement"
-        className="button session-decrement border-2 rounded-circle rounded-5"
+        className="button session-decrement rounded-circle"
         onClick={() => dispatch(decrement())}
       >
         <FontAwesomeIcon icon={faMinus} />
@@ -23,7 +23,7 @@ function Session() {
       </span>
       <button
         id="session-increment"
-        className="button session-increment border-2 rounded-circle rounded-5"
+        className="button session-increment rounded-circle"
         onClick={() => dispatch(increment())}
       >
         <FontAwesomeIcon icon={faPlus} />

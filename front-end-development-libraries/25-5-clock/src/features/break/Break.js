@@ -13,7 +13,7 @@ function Break() {
       <div>Break</div>
       <button
         id="break-decrement"
-        className="button break-decrement border-2 rounded-circle rounded-5"
+        className="button break-decrement rounded-circle"
         onClick={() => dispatch(decrement())}
       >
         <FontAwesomeIcon icon={faMinus} />
@@ -23,7 +23,7 @@ function Break() {
       </span>
       <button
         id="break-increment"
-        className="button break-increment border-2 rounded-circle rounded-5"
+        className="button break-increment rounded-circle"
         onClick={() => dispatch(increment())}
       >
         <FontAwesomeIcon icon={faPlus} />
