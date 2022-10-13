@@ -6,7 +6,7 @@
 1. Extract the files from the zip
 1. Move the folder under freecodecamp back end folder
 1. Delete the git folder (which was extracted from the zip) of the project (not the freecodecamp one)
-1. Add those lines in `.gitignore` on vscode:
+1. Replace all lines in `.gitignore` with those lines on vscode:
    ```gitignore
    .breakpoints
    .cache
