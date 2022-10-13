@@ -1,6 +1,21 @@
 # FAQ
 
-## How to setup a new project?
+## How to setup a new back-end project?
+
+1. Download as a zip from replit
+1. Extract the files from the zip
+1. Move the folder under freecodecamp back end folder
+1. Delete the git folder (which was extracted from the zip) of the project (not the freecodecamp one)
+1. Add those lines in `.gitignore` on vscode:
+   ```gitignore
+   .breakpoints
+   .cache
+   node_modules
+   replit_zip_error_log.txt
+   ```
+
+
+## How to setup a new front-end project?
 
 1. npx create-react-app front-end-development-libraries/random-quote-machine --template redux
 1. npm init -w ./front-end-development-libraries/random-quote-machine
