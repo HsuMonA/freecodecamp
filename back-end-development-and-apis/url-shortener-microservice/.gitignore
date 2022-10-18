@@ -1,0 +1,4 @@
+.breakpoints
+   .cache
+   node_modules
+   replit_zip_error_log.txt
