@@ -13,7 +13,7 @@
    node_modules
    replit_zip_error_log.txt
    ```
-
+   (don't forget to remove the space at the beginning!)
 
 ## How to setup a new front-end project?
 
