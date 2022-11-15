@@ -63,6 +63,7 @@
 
 ## Final steps before pushing the relational database projects
 
+1. Save a dump of the database.
 1. Update the READEME.md depending on the project.
 1. Create new file/s, copy, paste the codes from the file/s
 1. Commit and push to github.
