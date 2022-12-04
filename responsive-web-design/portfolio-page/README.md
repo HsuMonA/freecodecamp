@@ -6,4 +6,4 @@ Instructions for building this project can be found at https://www.freecodecamp.
 
 Built with Tailwind.
 
-[HTML file](../../index.html)
+[HTML file is at the root of the repository.](../../index.html)
