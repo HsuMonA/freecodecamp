@@ -1,7 +1,7 @@
 # Build a JavaScript Calculator
 
-**Objective:** Build an app that is functionally similar to this: <a href="https://javascript-calculator.freecodecamp.rocks/" target="_blank" rel="noopener noreferrer nofollow">https://javascript-calculator.freecodecamp.rocks/</a>.
+React application performing basic arithmetic calculations. Built with React, Redux, React-Bootstrap, JavaScript, CSS, and HTML.
+
+Here is the code for the "Build a JavaScript Calculator" project, one of the required projects to earn the certification for [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries).
 
 Instructions for building this project can be found at https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator
-
-Built with React, Redux and React-Bootstrap.
