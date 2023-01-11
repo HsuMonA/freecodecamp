@@ -4,4 +4,6 @@ React application converting Markdown into HTML from an editor. Built with React
 
 Here is the source directory for the " Build a Markdown Previewer" project, one of the required projects to earn the certification for [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries).
 
+The solution can be viewed [here](https://hsumona.github.io/freecodecamp/front-end-development-libraries/markdown-previewer/).
+
 Instructions for building this project can be found at https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-markdown-previewer

@@ -4,4 +4,6 @@ React application acting as a Pomodoro timer with adjustable intervals for Sessi
 
 Here is the source directory for the "Build a 25 + 5 Clock" project, one of the required projects to earn the certification for [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries).
 
+The solution can be viewed [here](https://hsumona.github.io/freecodecamp/front-end-development-libraries/25-5-clock/).
+
 Instructions for building this project can be found at https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-25--5-clock

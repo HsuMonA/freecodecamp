@@ -4,4 +4,6 @@ React application performing basic arithmetic calculations. Built with React, Re
 
 Here is the source directory for the "Build a JavaScript Calculator" project, one of the required projects to earn the certification for [Front End Development Libraries](https://www.freecodecamp.org/learn/front-end-development-libraries).
 
+The solution can be viewed [here](https://hsumona.github.io/freecodecamp/front-end-development-libraries/javascript-calculator/).
+
 Instructions for building this project can be found at https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator
