@@ -4,43 +4,43 @@ Projects which I have completed to get the certificates from [FreeCodeCamp](http
 
 ## Responsive Web Design
 
-- Build a Tribute Page: [Code](responsive-web-design/tribute-page) | [View](https://hsumona.github.io/freecodecamp/responsive-web-design/tribute-page/index.html)
-- Build a Survey Form: [Code](responsive-web-design/survey-form) | [View](https://hsumona.github.io/freecodecamp/responsive-web-design/survey-form/index.html)
-- Build a Product Landing Page: [Code](responsive-web-design/product-landing-page) | [View](https://hsumona.github.io/freecodecamp/responsive-web-design/product-landing-page/index.html)
-- Build a Technical Documentaion Page: [Code](responsive-web-design/technical-documentation-page) | [View](https://hsumona.github.io/freecodecamp/responsive-web-design/technical-documentation-page/index.html)
-- Build a Personal Portfolio Webpage: [Code](responsive-web-design/portfolio-page) | [View](https://hsumona.github.io/freecodecamp/)
+- Build a Tribute Page: [Source](responsive-web-design/tribute-page) | [Solution](https://hsumona.github.io/freecodecamp/responsive-web-design/tribute-page/index.html)
+- Build a Survey Form: [Source](responsive-web-design/survey-form) | [Solution](https://hsumona.github.io/freecodecamp/responsive-web-design/survey-form/index.html)
+- Build a Product Landing Page: [Source](responsive-web-design/product-landing-page) | [Solution](https://hsumona.github.io/freecodecamp/responsive-web-design/product-landing-page/index.html)
+- Build a Technical Documentaion Page: [Source](responsive-web-design/technical-documentation-page) | [Solution](https://hsumona.github.io/freecodecamp/responsive-web-design/technical-documentation-page/index.html)
+- Build a Personal Portfolio Webpage: [Source](responsive-web-design/portfolio-page) | [Solution](https://hsumona.github.io/freecodecamp/)
 
 ## JavaScript Algorithms and Data Structures
 
-- Palinedrome Checker: [Code](javascript-algorithms-and-data-structures/palinedrome-checker)
-- Roman Numeral Converter: [Code](javascript-algorithms-and-data-structures/roman-numeral-converter)
-- Caesars Cipher: [Code](javascript-algorithms-and-data-structures/caesars-cipher)
-- Telephone Number Validator: [Code](javascript-algorithms-and-data-structures/telephone-number-validator)
-- Cash Register: [Code](javascript-algorithms-and-data-structures/cash-register)
+- Palinedrome Checker: [Source](javascript-algorithms-and-data-structures/palinedrome-checker)
+- Roman Numeral Converter: [Source](javascript-algorithms-and-data-structures/roman-numeral-converter)
+- Caesars Cipher: [Source](javascript-algorithms-and-data-structures/caesars-cipher)
+- Telephone Number Validator: [Source](javascript-algorithms-and-data-structures/telephone-number-validator)
+- Cash Register: [Source](javascript-algorithms-and-data-structures/cash-register)
 
 ## Front End Development Libraries
 
-- Build a Random Quote Machine: [Code](front-end-development-libraries/random-quote-machine) | [View](https://hsumona.github.io/freecodecamp/front-end-development-libraries/random-quote-machine/index.html)
-- Build a Markdown Previewer: [Code](front-end-development-libraries/markdown-previewer) | [View](https://hsumona.github.io/freecodecamp/front-end-development-libraries/markdown-previewer/index.html)
-- Build a Drum Machine: [Code](front-end-development-libraries/drum-machine) | [View](https://hsumona.github.io/freecodecamp/front-end-development-libraries/drum-machine/index.html)
-- Build a JavaScript Calculator: [Code](front-end-development-libraries/javascript-calculator) | [View](https://hsumona.github.io/freecodecamp/front-end-development-libraries/javascript-calculator/index.html)
-- Build a 25 + 5 Clock: [Code](front-end-development-libraries/25-5-clock) | [View](https://hsumona.github.io/freecodecamp/front-end-development-libraries/25-5-clock/index.html)
+- Build a Random Quote Machine: [Source](front-end-development-libraries/random-quote-machine) | [Solution](https://hsumona.github.io/freecodecamp/front-end-development-libraries/random-quote-machine/index.html)
+- Build a Markdown Previewer: [Source](front-end-development-libraries/markdown-previewer) | [Solution](https://hsumona.github.io/freecodecamp/front-end-development-libraries/markdown-previewer/index.html)
+- Build a Drum Machine: [Source](front-end-development-libraries/drum-machine) | [Solution](https://hsumona.github.io/freecodecamp/front-end-development-libraries/drum-machine/index.html)
+- Build a JavaScript Calculator: [Source](front-end-development-libraries/javascript-calculator) | [Solution](https://hsumona.github.io/freecodecamp/front-end-development-libraries/javascript-calculator/index.html)
+- Build a 25 + 5 Clock: [Source](front-end-development-libraries/25-5-clock) | [Solution](https://hsumona.github.io/freecodecamp/front-end-development-libraries/25-5-clock/index.html)
 
 ## Back End Development and APIs
 
-- Timestamp Microservice: [Code](back-end-development-and-apis/timestamp-microservice)
-- Request Header Parser Microservice: [Code](back-end-development-and-apis/request-header-parser-microservice)
-- URL Shortener Microservice: [Code](back-end-development-and-apis/url-shortener-microservice)
-- Exercise Tracker: [Code](back-end-development-and-apis/exercise-tracker)
-- File Metadata Microservice: [Code](back-end-development-and-apis/file-metadata-microservice)
+- Timestamp Microservice: [Source](back-end-development-and-apis/timestamp-microservice)
+- Request Header Parser Microservice: [Source](back-end-development-and-apis/request-header-parser-microservice)
+- URL Shortener Microservice: [Source](back-end-development-and-apis/url-shortener-microservice)
+- Exercise Tracker: [Source](back-end-development-and-apis/exercise-tracker)
+- File Metadata Microservice: [Source](back-end-development-and-apis/file-metadata-microservice)
 
 ## Relational Database
 
-- Build a Celestial Bodies Database: [Code](relational-database/build-a-celestial-bodies-database)
-- Build a World Cup Database: [Code](relational-database/build-a-world-cup-database)
-- Build a Salon Appointment Scheduler: [Code](relational-database/build-a-salon-appointment-scheduler)
-- Build a Periodic Table Database: [Code](relational-database/build-a-periodic-table-database)
-- Build a Number Guessing Game: [Code](relational-database/build-a-number-guessing-game)
+- Build a Celestial Bodies Database: [Source](relational-database/build-a-celestial-bodies-database)
+- Build a World Cup Database: [Source](relational-database/build-a-world-cup-database)
+- Build a Salon Appointment Scheduler: [Source](relational-database/build-a-salon-appointment-scheduler)
+- Build a Periodic Table Database: [Source](relational-database/build-a-periodic-table-database)
+- Build a Number Guessing Game: [Source](relational-database/build-a-number-guessing-game)
 
 ## License
 
