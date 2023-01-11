@@ -28,11 +28,11 @@ Projects which I have completed to get the certificates from [FreeCodeCamp](http
 
 ## Back End Development and APIs
 
-- Timestamp Microservice: [Source](back-end-development-and-apis/timestamp-microservice)
-- Request Header Parser Microservice: [Source](back-end-development-and-apis/request-header-parser-microservice)
-- URL Shortener Microservice: [Source](back-end-development-and-apis/url-shortener-microservice)
-- Exercise Tracker: [Source](back-end-development-and-apis/exercise-tracker)
-- File Metadata Microservice: [Source](back-end-development-and-apis/file-metadata-microservice)
+- Timestamp Microservice: [Source](back-end-development-and-apis/timestamp-microservice) | [Solution](https://timestamp-microservice.hsumona.repl.co/)
+- Request Header Parser Microservice: [Source](back-end-development-and-apis/request-header-parser-microservice) | [Solution](https://request-header-parser-microservice.hsumona.repl.co/)
+- URL Shortener Microservice: [Source](back-end-development-and-apis/url-shortener-microservice) | [Solution](https://url-shortener-microservice.hsumona.repl.co/)
+- Exercise Tracker: [Source](back-end-development-and-apis/exercise-tracker) | [Solution](https://exercise-tracker.hsumona.repl.co/)
+- File Metadata Microservice: [Source](back-end-development-and-apis/file-metadata-microservice) | [Solution](https://file-metadata-microservice.hsumona.repl.co/)
 
 ## Relational Database
 
